@@ -1,0 +1,230 @@
+/*цвет основного текста #212121 */
+/*вторичний цвет текста #757575*/
+/* белий #F5F5F5 */
+/* акцент #2196F3 */
+/* вторичний цвет фона #F5F4FA */
+
+
+:root{
+    --primary-text-color:#757575;
+    --title-text-color:#212121;
+    --accent-color:#2196F3;
+    --background-hero: #2F303A;
+    --white:#fff;
+    --primary-background: #F5F5F5;
+    --secondary-background:#F5F4FA;
+    --shadow:rgba(0, 0, 0, 0.25);
+}
+
+
+body{
+background-color:var(--white);
+color: var(--primary-text-color) ;
+font-family:Roboto, sans-serif;
+letter-spacing: 0.03em;
+}
+
+/*Хедер*/
+
+ul {
+    list-style:none;
+}
+
+
+.logo{
+    color: var(--accent-color);
+    font-family:Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: calc(30/25);
+    text-shadow: var(--shadow);
+    text-shadow: 0px 4px 4px var(--shadow);
+}
+.link,
+.adress,
+.auth{
+   text-decoration: none; 
+}
+
+.part_logo{
+    color:var(--title-text-color);
+    
+}
+
+.nav_links{
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16/12);
+}
+
+.nav_links:hover,
+.nav_links:focus{
+color: var(--accent-color);
+}
+
+.nav_links.current{
+    color: var(--accent-color);
+}
+
+.auth_ref{
+    color: var(--primary-text-color);
+    text-decoration:none ;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16/12);
+}
+.auth_ref:hover,
+.auth_ref:focus{
+color: var(--accent-color);
+}
+
+/*Секція хіро*/
+
+.main_title{
+    color: var(--primary-background);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: calc(60/44);
+    text-align: center;
+}
+
+.hero,
+.footer{
+     background-color: var(--background-hero);
+}
+
+.button{
+color: var(--primary-background);
+background-color: var(--accent-color);
+border-color: transparent;
+font-family: inherit;
+cursor: pointer;
+font-weight: 700;
+font-size: 16px;
+line-height: 30px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.06em;
+}
+
+.buttons{
+    color: var(--title-text-color);
+    background-color: var(--secondary-background);
+    border-color: transparent;
+    font-family: inherit;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(26/16);
+    text-align: center;
+}
+.buttons:hover,
+.buttons:focus{
+    color: var(--primary-background);
+    background-color: var(--accent-color);
+    border-color: transparent;
+}
+
+.section_title,
+.features_title{
+  color: var(--title-text-color);  
+}
+
+/*Секція фічі*/
+.features_title{
+    font-size: 14px;
+    line-height: calc(16/14);
+    text-transform: uppercase;
+}
+.features_title,
+.team_member{
+    color: var(--title-text-color);
+}
+
+.features_text,
+.team_text{
+    color: var(--primary-text-color);
+}
+.features_text{
+    font-size: 14px;
+    line-height: calc(24/14);
+}
+/*Секція картинок*/
+.section_title{
+font-size: 36px;
+line-height: calc(42/36);
+text-align: center;
+}
+/*Наша команда*/
+.picture{
+    background: var(--white);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+.team_section{
+background-color:var(--secondary-background);
+}
+.section_title{
+    font-size: 36px;
+    line-height: calc(42/36);
+    text-align: center;
+}
+.team_member{
+    font-size: 16px;
+    line-height: calc(19/16);
+    text-align: center;
+}
+.team_text{
+    font-size: 16px;
+    line-height: calc(19/16);
+    text-align: center;
+}
+
+/*Футер*/
+.spart_logo{
+    color: var(--primary-background);
+    font-family: Raleway sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: calc(30/25);
+}
+
+.place{
+    color: var(--primary-background);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24/14);
+}
+
+.auth{
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: calc(21/14);
+color: rgba(255, 255, 255, 0.6);
+}
+.place:hover,
+.auth:hover{
+    color: var(--accent-color);
+}
+
+/* Друга сторінка*/
+.card_item{
+    background: var(--white);
+    border: 1px solid var(--white);
+}
+.card_titile{
+color: var(--title-text-color);
+font-weight: 700;
+font-size: 18px;
+line-height: calc(36/18);
+}
+.card_text{
+color: var(--primary-text-color);
+font-weight: 400;
+font-size: 16px;
+line-height: calc(30/16);
+}
