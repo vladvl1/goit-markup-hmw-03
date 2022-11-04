@@ -4,9 +4,7 @@
 /* акцент #2196F3 */
 /* вторичний цвет фона #F5F4FA */
 
-html{
-    box-sizing: border-box;
-}
+
 img {
     display: block;
     max-width: 100%;
@@ -16,11 +14,8 @@ img {
     margin-top: 0;
     margin-bottom: 0;
   }
-*,
-*::after,
-*::before{
-    box-sizing: inherit;
-}
+
+
 
 :root{
     --primary-text-color:#757575;
@@ -44,7 +39,7 @@ letter-spacing: 0.03em;
 }
 .section.no_padding{
     padding-top: 0;
-    padding-bottom: 0;
+    
 }
 .section{
     padding-top: 94px;
@@ -315,12 +310,20 @@ margin-bottom: 9px;
 }
 
 /* Друга сторінка*/
+.port_logo{
+font-size: 26px;
+line-height: calc(31/26);
+letter-spacing: 0.03em;
+text-shadow: none;
+}
+
 .port_line{
     border-bottom: 1px solid var(--line);
 }
 .blist{
     display: flex;
     justify-content: center;
+    padding-bottom: 50px;
 }
 
 .buttons{
@@ -332,38 +335,46 @@ margin-bottom: 9px;
     font-weight: 500;
     font-size: 16px;
     line-height: calc(26/16);
-    margin-bottom: 50px;
     padding: 6px 20px;
-    
+    border-radius: 4px;
 }
-.blist .bitem:not(:first-child){
-margin-left: 8px;
-}
-
 .buttons:hover,
 .buttons:focus{
     color: var(--primary-background);
     background-color: var(--accent-color);
     border-color: transparent;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
+.blist .bitem:not(:first-child){
+margin-left: 8px;
+}
+
+
+
 .card_list{
     display: flex;
     flex-wrap: wrap;
 }
 .card_item{
     background: var(--white);
+    margin-bottom: 30px;
+   }
+   .card_item:nth-child(n+7){
+    margin-bottom: 0;
    }
 .card_box{
      border: 1px solid var(--line);
      padding-bottom: 20px;
      padding-left: 24px; 
 }
-.card_list .card_item+.card_item{
-    margin-left: auto;
+.card_list .card_item{
+    margin-right: 30px;
 }
-.card_item{
-    margin-bottom: 30px;
+.card_item:nth-child(3n){
+    margin-right: 0;
 }
+
 
 .card_titile{
 color: var(--title-text-color);
